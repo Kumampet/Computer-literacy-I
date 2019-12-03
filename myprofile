@@ -1,0 +1,8 @@
+studentid=s1250050
+name=Tsuyoshi Kumamoto
+lit1hmepage=http://web-int.u-aizu.ac.jp/course/lit1/
+newsserver=nh1.u-aizu.ac.jp
+receive_server=stdmsv1.u-aizu.ac.jp
+smtp_server=receive_server
+ftp=ftp.u-aizu.ac.jp
+nameserver=163.143.1.100

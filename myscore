@@ -1,0 +1,8 @@
+#! /usr/local/gnu/bin/bash
+YEAR=$(date +'%Y')
+cd ~a-fujitu/education/literacy
+cd $YEAR/summer/
+echo "採点のためのFile"
+ls *.sc
+echo -n "input your UserID?"
+read number grep $number *.sc

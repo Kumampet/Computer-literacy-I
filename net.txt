@@ -1,0 +1,7 @@
+std2dc47:~ s1250050[51]$ traceroute std2dc47
+traceroute to std2dc47 (163.143.11.148), 30 hops max, 40 byte packets
+ 1  std2dc47 (163.143.11.148)  0.023 ms  0.010 ms  0.005 ms
+
+aplisv171:~ s1250050[52]$ traceroute aplisv1
+traceroute to aplisv1 (163.143.3.73), 30 hops max, 40 byte packets
+ 1  aplisv171 (163.143.3.73)  0.029 ms  0.012 ms  0.020 ms

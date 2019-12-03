@@ -1,0 +1,463 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Mathematica1</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+
+		<link rel="stylesheet" href="css/theme/simple.css">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown
+				    data-separator="\n---\n$"
+				    data-vertical="\n--\n">
+				    <script type="text/template">
+
+
+## コンピュータリテラシII
+## Mathematica 第1回
+
+2018/1/22
+
+奥山祐市
+
+(okuyama@u-aizu.ac.jp) 202-C
+
+---
+
+### Mathematicaとは
+* 数値計算
+* 数式処理
+* グラフ描画
+* プログラム可能
+
+<br />
+
+### 本講義の目的
+* Mathematicaの基本的な使い方を習得
+
+---
+
+### Mathematicaの起動
+* 利用可能な演習室
+ * コンピュータ演習室1-4 (Solaris端末から)
+ * コンピュータ演習室5,6 (Mac)
+ * CALL教室1,2,  iLab教室1,2 (Mac)
+ * Linux 環境(aplilx[1,2],cadsv[1-6] : リモート実行)
+ * Webブラウザから
+* バージョン
+ * Solaris: 7
+ * Mac, Linux, Windows: 11
+ * Web: Mathematica Online
+
+---
+
+### Mathematicaの利用方法
+* Solaris: /home/course/lit2/Mathematica <br>にプログラムがある。
+* Mathematica Online
+ * http://web-int.u-aizu.ac.jp/labs/istc/ipc/topic/mathematica/online.html 
+をよく読んで利用する
+ * アカウントの取得に時間がかかるので、今日の演習はSolaris版で
+* その他の教室
+ * http://web-int.u-aizu.ac.jp/labs/istc/ipc/release/software.html#mathematica7
+
+---
+
+### Mathematicaの２つの環境
+* ノートブック環境(こちらを **メイン** で説明)<br />
+ `/home/course/lit2/Mathematica/bin/mathematica`
+ * グラフィックスなど利用可能
+* テキスト環境<br />
+ /home/course/lit2/Mathematica/bin/math
+ * テキスト端末(Gnome Terminal等)から利用
+ * エディタで予めプログラムを作成
+
+---
+
+### 起動直後の様子
+
+![kidou](./imgs/math1-0.png) <!-- .element height="90%" width="90%" -->
+
+---
+
+### ドキュメント
+* ノートブック環境の
+ * Main Window/Help Menu/Documentation Center
+ * Welcome Screen/COMPLETE DOCUMENTATION
+ * Function Navigator: Mathematicaに組み込まれている関数のguide
+ * Virtual Book: 書店で売られている同名の本と同じ内容
+ * Documentation Center Home
+* http://www.wolfram.co.jp/
+ * Mathematicaのサイト
+
+---
+
+### Mathematica の起動
+
+```
+> /home/course/lit2/Mathematica/bin/mathematica &
+```
+ * ノートブック環境
+  * メインウィンドウ右下で倍率を変更
+ * Solaris用はバージョン7
+
+```
+> /home/course/lit2/Mathematica/bin/math &
+```
+ * テキスト環境
+
+---
+
+### 命令の送信
+* ノートブック環境では<br />
+  ウィンウィンドウの中に命令を書き `Shift+Return` を同時に押す<br />
+  (`Return`だけでは命令は実行されない)
+* テキスト環境では<br />
+`Return`で命令が送信される
+
+---
+
+### Mathematicaの終了
+
+* ノートブック環境では<br />
+ メニューの `File->Quit` を選択
+* テキスト環境では<br />
+`Quit`という命令を入カ
+
+* Solaris版に日本語環境は用意されていない<br />
+Edit/Preferences/Interface/Languageで<br />
+Japaneseを選択すると再起動が困難に!
+
+---
+
+### ノートブックの保存と読み込み
+
+ノートブック環境で
+* 保存: インウィンドウの`File->Save`を選択
+* 読み込み: インウィンドウの`File->Open`を選択
+
+---
+
+### 数値計算の例<br />（高度な電卓として）
+
+* Mathematicaは数式処理を行い、任意の精度で結果を出力できる（有理計算）
+* `In[]:=` の後に数式を書き、Shift+Returnでコマンドを実行する
+* 分数や無理数、複素数もそのまま扱うことが可能
+* N[]という関数を使うと任意の有効数字(デフォルトは6桁)で数式を評価する
+
+---
+
+### 数値計算の例
+
+![数値計算の例](./imgs/math1-1.png) <!-- .element height="40%" width="40%" -->
+
+* `N[]`で数値として評価、 `%`は直前の入カ
+
+---
+
+### 数学定数と数学関数
+
+* 文字式をそのまま取り扱うことができる
+ * 例 `E`(自然対数の底$e$), `Pi`(円周率$\pi$), `I`(虚数単位$i$)
+* 標準的な数学関数は組み込まれている
+ * 例 `Log[]`, `Sin[]`, `ArcTan[]`
+* 組み込み関数は **大文字** で始まる
+
+---
+
+### 数学関数の例
+
+![数学関数の例](./imgs/math1-2.png) <!-- .element height="40%" width="40%" -->
+
+---
+
+### 数式処理
+
+* 文字列をそのまま扱うことができる
+* `Expand[]`で式を展開
+* `Factor[]`で因数分解
+* `Simplify[]`で簡略化
+* `TrigExpand[]`, `TrigFactor[]` で三角関数も変形できる
+
+---
+
+### 数式の演算子
+* `D[]`で微分
+* `Integrate[]`で定積分・不定積分
+* `Sum[]`で総和の計算
+
+---
+
+### 数式処理の例
+
+![数式処理の例](./imgs/math1-3.png) <!-- .element height="40%" width="40%" -->
+
+---
+
+### 方程式を解く
+* 解析的（式の変形）: `Solve[]`
+* 数値的: いくつか方法がある
+ * ここでは`FindRoot[]`を用いる
+
+---
+
+### 解の探索（`Solve関数`）
+
+![解の探索1](./imgs/math1-4.png) <!-- .element height="60%" width="60%" -->
+
+---
+
+### 解の探索（`FindRoot関数`）
+
+![解の探索2](./imgs/math1-5.png) <!-- .element height="80%" width="80%" -->
+
+---
+
+### グラフィックス
+
+Mathematicaは豊富なグラフィクス機能を持つ
+
+* 2次元・3次元関数やデータのプロット
+* 2変数関数の等高線・密度プロット
+* 円グラフ・棒グラフ
+
+---
+
+### グラフの例(2次元プロット)
+
+![graph1](./imgs/math1-7.png) <!-- .element height="80%" width="80%" -->
+
+---
+
+### グラフの例(2次元プロット)
+
+![graph2](./imgs/math1-9.png) <!-- .element height="70%" width="70%" -->
+
+---
+
+### グラフの例(3次元プロット)
+
+![graph3](./imgs/math1-10.png) <!-- .element height="80%" width="80%" -->
+
+---
+
+### 陰関数曲面のプロット
+
+![graph4](./imgs/math1-31.png) <!-- .element height="70%" width="70%" -->
+
+---
+
+### 値を表す名前
+
+* `name = expr` : 左辺はシンボルであり、文字と文字に続く数字で作る
+* `name` : 一度登録した名前は、定義式の右辺が評価された値になる
+* `Clear[]` : 名前の定義をクリアする
+ * ClearAll["Global\`*"] ですべての名前をクリア
+
+### 値の操作
+
+* 'a /. x->b' :変換規則の適用。a内のxをbに置き換える
+* 'a // f' : 関数の適用。 f[a]と同じ
+
+---
+
+### 値を表す名前の例
+
+![name1](./imgs/math1-32.png) <!-- .element height="80%" width="80%" -->
+
+---
+
+### 値の操作
+
+![name1](./imgs/math1-33.png) <!-- .element height="80%" width="80%" -->
+
+---
+
+### 行列とベクトル
+
+* 中括弧「`{}`」でくくった要素の列は「リスト」になる
+ * 要素はカンマ「`,`」で区切る
+ * リストを要素にして入れ子にすることができる
+* 1重リストは縦ベクトルに相当
+* 多重リストで行列を表現する
+ * パレットの行列入力も使える
+* 関数 `MatrixForm[]`で、行列形式表示
+
+---
+
+### ベクトル・行列への演算
+* 要素ごとの演算
+ * 和(`+`)・差(`-`)・積(`*`)・商(`/`)
+ * 要素の数が異なる場合、内部で拡張が起こる
+* 内積(`.`)
+ * ベクトルの内積
+ * 行列とベクトルの乗算
+ * 行列と行列の乗算
+
+---
+
+### 行列の演算例
+
+![matrix1](./imgs/math1-11.png) <!-- .element height="50%" width="50%" -->
+
+---
+
+### 行列の演算
+
+* MatrixRank[m] : 行列mのランクを求める
+* Det[m] : 行列mの行列式を求める
+* Inverse[m] : 行列mの逆行列を求める
+* Eigenvalues[m]: 行列mの固有値を求めて列挙する
+* Eigenvectors[m]: 行列mの固有ベクトルを求めて列挙する
+* Eigensystem[m]: {eigenvalues,eigenvectors}という形式のリスト
+
+---
+
+### 行列の演算例
+
+![matrix2](./imgs/math1-12.png) <!-- .element height="55%" width="55%" -->
+
+---
+
+### 行列の演算例
+
+![matrix3](./imgs/math1-13.png) <!-- .element height="80%" width="80%" -->
+
+---
+
+### 2017年のセンター試験問題から(1)  
+
+$a$を定数とし、<br>
+$g(x)=x^2-2(3a^2+5a)x+18a^4+30a^3+49a^2+16$<br>
+とおく。2次関数$y=g(x)$のグラフの頂点は
+$({\bf 【セ】}a^2+{\bf 【ソ】}a,{\bf 【タ】}a^4+{\bf 【チツ】}a^2+{\bf 【テト】})$
+である。
+
+$a$が実数全体をうごくとき、頂点の$x$座標の最小値は
+$-\frac{{\bf 【ナニ】}}{{\bf 【ヌネ】}}$である。
+
+---
+
+### 解法(1/2)
+
+![center1](./imgs/math1-21.png) <!-- .element height="80%" width="80%" -->
+
+---
+
+### 解法(2/2)
+
+![center2](./imgs/math1-22.png) <!-- .element height="80%" width="80%" -->
+
+---
+
+### 演習課題
+
+* 課題は指定されたファイル名で<br />
+ディレクトリ `$HOME/literacy` の中に保存せよ
+* ファイルのパーミッションは`rw----r--`(604)にすること
+* Solaris版で作成したものを受け付ける
+ * それ以外のバージョンで作成した場合は、
+必ずSolaris版で確認してからファイルを作成すること。
+
+---
+
+### 課題提出方法
+課題2~4を行った結果のノートブック
+を各自のホームディレクトリの下,
+`SHOME/literacy/math1.nb`
+に保存せよ 。提出期限は1週間後(1/29)の23:59:59とする
+
+
+---
+
+### 課題1
+
+* Welcome Screen内のGETTING STARTED中のLearn with guided examplesを実行し
+中に説明されている操作を行う。
+* ハンドアウトに記載されている実行例をすべて試す
+ * 例題は https://www.wolframcloud.com/objects/d031d61f-f6f1-4cae-9da3-2a69f8af0004 にて公開している
+* この課題は提出しなくてよい
+
+---
+
+### 課題2
+
+以下の問題をMathematicaを用い解け
+* $(x+1)(x-1)(x^2-2)$を展開せよ
+* $2ab+b^2-6a-3b$を因数分解せよ
+* 直線$2x+3y=7$と直線$3x-2y=11$を図示するとともに、2つの直線の交点の座標を求めよ
+ * ヒント：連立方程式は方程式のリストとしても与えることができる
+
+---
+
+### 課題3
+
+以下で与えられる曲線の概形を`ContourPlot3D[]`関数で示せ.
+ただし、概形がわかるように表示する範囲を設定せよ。
+
+1. $x^2+y^2+z^2+x y+x z+y z =2$
+1. $x^2+y^2+z^2+2x y+2x z+2y z$<br /> $-\sqrt{3}x-2\sqrt{3}y-3\sqrt{3}z=2$
+1. $x^2+y^2+10z^2+2x y-16x z+16y z$<br /> $-6\sqrt{2}x-6\sqrt{2}y-36=0$
+
+ヒント：$\sqrt{x}$は`Sqrt[x]`で与えることができる
+
+---
+
+### 課題4
+
+関数$f(x)=\log{(x^2+1)}$ を考える。$y=f(x)$のグラフをCとするとき、以下を求めよ
+
+1. Cの概形
+1. $f(x)$の極値と変曲点の座標
+1. Cの二つの変曲点とCで囲まれた領域の面積
+
+ヒント：$x$の2階微分は`D[式, {x,2}]`で求めることができる<br />
+また、定積分は`Integrate[式, {x,下端,上端}]]`で行うことができる
+
+				    </script>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+			history:true,
+			math: {
+					mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+					config: 'TeX-AMS_HTML-full'
+			},
+			dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/math/math.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>

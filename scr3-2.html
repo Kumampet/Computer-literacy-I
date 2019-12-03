@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01
+  Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head lang="ja">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>会津大マークと猫の絵</title>
+<script language="JavaScript" type="text/javascript">
+<!--
+// Imageオブジェクトの生成
+var onImg = new Image();
+var offImg = new Image();
+// プロパティsrcに画像をプリロード
+onImg.src = "http://web-int.u-aizu.ac.jp/course/lit2/lit2-js-images/cat1.jpg";
+offImg.src = "http://web-int.u-aizu.ac.jp/course/lit2/lit2-js-images/cat2.jpg";
+//-->
+</script>
+</head>
+
+<body>
+<img src="http://www.ubic-u-aizu.jp/intl.it/images/h_aizu.gif" name='uoa'
+     onMouseOver = 'cat.src = onImg.src;'
+     onMouseOut = 'cat.src = offImg.src;'
+     >
+
+<img name='cat' src="http://web-int.u-aizu.ac.jp/course/lit2/lit2-js-images/cat2.jpg"
+     onMouseOver = 'this.src = onImg.src;'
+     onMouseOut = 'this.src = offImg.src;'>
+
+</body>
+</html>

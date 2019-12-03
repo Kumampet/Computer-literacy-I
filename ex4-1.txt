@@ -1,0 +1,21 @@
+net2: flags=100001000843<UP,BROADCAST,RUNNING,MULTICAST,IPv4,PHYSRUNNING> mtu 1500 index 2
+	inet 163.143.12.110 netmask ffffff00 broadcast 163.143.12.255
+
+インターフェース名：net2
+inet：利用しているネットワークアドレス型の一種。
+netmask:IPアドレスをネットワークアドレスとホストナンバーにわけるためのマスクビット列のこと。IPアドレスのどの部分をネットワーク部として使用するか示す値
+broadcast:ブロードキャスト(一対多通信)アドレスを表示。ホスト部が10進数表記で.255となるアドレス。
+mtu:正式名称はMaximum Transmission Unit (MTU)であり、ネットワークにおいて1回の転送で送信できるデータの最大値を示す伝送単位のこと。
+
+std2dc10:literacy s1250050[63]$ getent networks |grep 163.143.12
+research-108-net     163.143.129
+research-sw-art-1    163.143.123 research-sw-art-istc
+research-sw-cg-1     163.143.121 research-sw-cg-istc
+research-sw-cn-1     163.143.126 research-sw-cn-istc
+research-sw-fcs-1    163.143.128 research-sw-fcs-istc
+research-sw-ip-1     163.143.122 research-sw-ip-istc
+research-sw-lps-1    163.143.127 research-sw-lps-istc
+research-sw-se-1     163.143.125 research-sw-se-istc
+research-sw-sm-1     163.143.124 research-sw-sm-istc
+std2-net             163.143.12
+

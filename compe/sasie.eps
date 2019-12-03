@@ -1,0 +1,890 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: -79 230 569 816
+%%Title: sasie
+%%CreationDate: Tue Jun 27 01:21:53 2017
+%%Creator: Tgif-4.2.5-QPL written by William Chia-Wei Cheng (bill.cheng@acm.org)
+%%ProducedBy: (unknown)
+%%Pages: 1
+%%DocumentFonts: (atend)
+%%EndComments
+%%BeginProlog
+
+/tgifdict 89 dict def
+tgifdict begin
+
+/tgifellipsedict 6 dict def
+tgifellipsedict /mtrx matrix put
+
+/TGEL % tgifellipse
+ { tgifellipsedict begin
+      /yrad exch def
+      /xrad exch def
+      /y exch def
+      /x exch def
+      /savematrix mtrx currentmatrix def
+      x y translate
+      xrad yrad scale
+      0 0 1 0 360 arc
+      savematrix setmatrix
+   end
+ } def
+
+/tgifarrowtipdict 8 dict def
+tgifarrowtipdict /mtrx matrix put
+
+/TGAT % tgifarrowtip
+ { tgifarrowtipdict begin
+      /dy exch def
+      /dx exch def
+      /h exch def
+      /w exch def
+      /y exch def
+      /x exch def
+      /savematrix mtrx currentmatrix def
+      x y translate
+      dy dx atan rotate
+      0 0 moveto
+      w neg h lineto
+      w neg h neg lineto
+      savematrix setmatrix
+   end
+ } def
+
+/tgifpatdict 12 dict def
+
+/tgifpatbyte
+ { currentdict /retstr get exch
+   bytesperrow mul
+   pat i cellh mod bytesperrow mul bytesperrow getinterval putinterval
+ } def
+
+/tgifpatproc
+ { 0 1 cells_wd 1 sub {tgifpatbyte} for retstr
+   /i i 1 add def
+ } def
+
+/TGPF % tgifpatfill
+ { tgifpatdict begin
+      /h exch def
+      /w exch def
+      /lty exch def
+      /ltx exch def
+      /cellh exch def
+      /cellw exch def
+      /pat exch def
+
+      /cells_wd w cellw div cvi def
+      /bytesperrow cellw 8 div ceiling cvi def
+      /retstr cells_wd bytesperrow mul string def
+      /i 0 def
+
+      tgiforigctm setmatrix
+      ltx lty translate
+      w h true [1 0 0 1 0 0] {tgifpatproc} imagemask
+      ltx neg lty neg translate
+   end
+ } def
+
+/pat3 <8000000008000000> def
+/pat4 <8800000022000000> def
+/pat5 <8800220088002200> def
+/pat6 <8822882288228822> def
+/pat7 <aa55aa55aa55aa55> def
+/pat8 <77dd77dd77dd77dd> def
+/pat9 <77ffddff77ffddff> def
+/pat10 <77ffffffddffffff> def
+/pat11 <7ffffffff7ffffff> def
+/pat12 <8040200002040800> def
+/pat13 <40a00000040a0000> def
+/pat14 <ff888888ff888888> def
+/pat15 <ff808080ff080808> def
+/pat16 <f87422478f172271> def
+/pat17 <038448300c020101> def
+/pat18 <081c22c180010204> def
+/pat19 <8080413e080814e3> def
+/pat20 <8040201008040201> def
+/pat21 <8844221188442211> def
+/pat22 <77bbddee77bbddee> def
+/pat23 <c1e070381c0e0783> def
+/pat24 <7fbfdfeff7fbfdfe> def
+/pat25 <3e1f8fc7e3f1f87c> def
+/pat26 <0102040810204080> def
+/pat27 <1122448811224488> def
+/pat28 <eeddbb77eeddbb77> def
+/pat29 <83070e1c3870e0c1> def
+/pat30 <fefdfbf7efdfbf7f> def
+/pat31 <7cf8f1e3c78f1f3e> def
+
+/TGMAX
+ { exch dup 3 1 roll exch dup 3 1 roll gt { pop } { exch pop } ifelse
+ } def
+/TGMIN
+ { exch dup 3 1 roll exch dup 3 1 roll lt { pop } { exch pop } ifelse
+ } def
+/TGSW { stringwidth pop } def
+/tgifstrw 0 def
+
+/bd { bind def } bind def
+
+/GS { gsave } bd
+/GR { grestore } bd
+/NP { newpath } bd
+/CP { closepath } bd
+/CHP { charpath } bd
+/CT { curveto } bd
+/L { lineto } bd
+/RL { rlineto } bd
+/M { moveto } bd
+/RM { rmoveto } bd
+/S { stroke } bd
+/F { fill } bd
+/TR { translate } bd
+/RO { rotate } bd
+/SC { scale } bd
+/MU { mul } bd
+/DI { div } bd
+/DU { dup } bd
+/NE { neg } bd
+/AD { add } bd
+/SU { sub } bd
+/PO { pop } bd
+/EX { exch } bd
+/CO { concat } bd
+/CL { clip } bd
+/EC { eoclip } bd
+/EF { eofill } bd
+/IM { image } bd
+/IMM { imagemask } bd
+/ARY { array } bd
+/SG { setgray } bd
+/RG { setrgbcolor } bd
+/SD { setdash } bd
+/W { setlinewidth } bd
+/SM { setmiterlimit } bd
+/SLC { setlinecap } bd
+/SLJ { setlinejoin } bd
+/SH { show } bd
+/FF { findfont } bd
+/MS { makefont setfont } bd
+/AR { arcto 4 {pop} repeat } bd
+/CURP { currentpoint } bd
+/FLAT { flattenpath strokepath clip newpath } bd
+/TGSM { tgiforigctm setmatrix } def
+/TGRM { savematrix setmatrix } def
+
+end
+
+%%EndProlog
+%%Page: 1 1
+
+%%PageBoundingBox: -79 230 569 816
+tgifdict begin
+/tgifsavedpage save def
+
+1 SM
+1 W
+
+0 SG
+
+72 0 MU 72 11.602 MU TR
+72 128 DI 100.000 MU 100 DI DU NE SC
+
+GS
+
+/tgiforigctm matrix currentmatrix def
+
+% RCBOX
+0 SG
+GS
+   NP
+      576 656 M
+      592 656 592 1024 16 AR
+      592 1008 L
+      592 1024 59 1024 16 AR
+      75 1024 L
+      59 1024 59 656 16 AR
+      59 672 L
+      59 656 592 656 16 AR
+   CP 1 SG F
+   0 SG
+   NP
+      576 656 M
+      592 656 592 1024 16 AR
+      592 1008 L
+      592 1024 59 1024 16 AR
+      75 1024 L
+      59 1024 59 656 16 AR
+      59 672 L
+      59 656 592 656 16 AR
+   CP EC NP
+   pat18 8 8 56 648 544 384 TGPF
+GR
+GS
+   GS
+      NP
+         576 656 M
+         592 656 592 1024 16 AR
+         592 1008 L
+         592 1024 59 1024 16 AR
+         75 1024 L
+         59 1024 59 656 16 AR
+         59 672 L
+         59 656 592 656 16 AR
+      CP
+      S
+   GR
+GR
+
+% TEXT
+NP
+0 SG
+GS
+   96 770 TR
+   [6.705 0.000 0.000 8.898 93 0] CO
+   96 NE 770 NE TR
+GR
+   GS
+      1 W
+      96 770 TR
+      [6.705 0.000 0.000 8.898 93 0] CO
+      0 14 M
+      GS
+            0 SG
+            /Times-Roman FF [14 0 0 -14 0 0] MS
+            (convert) SH
+      GR
+   GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   -32 320 TR
+   [0.817 0.576 -0.576 0.817 50 -238] CO
+   -32 NE 320 NE TR
+NP
+   16 320 M
+   -32 448 L
+   128 592 L
+   272 528 L
+   240 512 L
+   144 560 L
+   0 448 L
+   32 336 L
+   16 320 L
+CP EF
+GS
+   NP
+      16 320 M
+      -32 448 L
+      128 592 L
+      272 528 L
+      240 512 L
+      144 560 L
+      0 448 L
+      32 336 L
+      16 320 L
+   TGSM
+   3 W
+   S
+   1 W
+GR
+GR
+
+% RCBOX
+GS
+   240 416 TR
+   [0.352 0.936 -0.936 0.352 -10 -95] CO
+   240 NE 416 NE TR
+0 SG
+GS
+   GS
+      NP
+         384 416 M
+         400 416 400 496 16 AR
+         400 480 L
+         400 496 240 496 16 AR
+         256 496 L
+         240 496 240 416 16 AR
+         240 432 L
+         240 416 400 416 16 AR
+      CP
+      TGSM
+      3 W
+      S
+   GR
+GR
+GR
+
+% TEXT
+NP
+0 SG
+GS
+   256 434 TR
+   [1.760 4.680 -2.808 1.056 -37 -91] CO
+   256 NE 434 NE TR
+GR
+   GS
+      1 W
+      256 434 TR
+      [1.760 4.680 -2.808 1.056 -37 -91] CO
+      0 14 M
+      GS
+            0 SG
+            /Times-Roman FF [14 0 0 -14 0 0] MS
+            (bmp) SH
+      GR
+   GR
+
+% RCBOX
+GS
+   368 416 TR
+   [0.650 0.760 -0.760 0.650 -45 17] CO
+   368 NE 416 NE TR
+0 SG
+GS
+   GS
+      NP
+         512 416 M
+         528 416 528 496 16 AR
+         528 480 L
+         528 496 368 496 16 AR
+         384 496 L
+         368 496 368 416 16 AR
+         368 432 L
+         368 416 528 416 16 AR
+      CP
+      TGSM
+      3 W
+      S
+   GR
+GR
+GR
+
+% TEXT
+NP
+0 SG
+GS
+   384 418 TR
+   [4.293 5.013 -3.038 2.602 -52 29] CO
+   384 NE 418 NE TR
+GR
+   GS
+      1 W
+      384 418 TR
+      [4.293 5.013 -3.038 2.602 -52 29] CO
+      0 14 M
+      GS
+            0 SG
+            /Times-Roman FF [14 0 0 -14 0 0] MS
+            (eps) SH
+      GR
+   GR
+
+% RCBOX
+0 SG
+GS
+   GS
+      NP
+         992 960 M
+         1008 960 1008 1008 16 AR
+         1008 992 L
+         1008 1008 592 1008 16 AR
+         608 1008 L
+         592 1008 592 960 16 AR
+         592 976 L
+         592 960 1008 960 16 AR
+      CP
+      4 W
+      S
+   GR
+GR
+
+% OVAL
+0 SG
+GS
+   NP 611 984 19 24 TGEL
+   CP 1 SG F
+   0 SG
+   NP 611 984 19 24 TGEL
+   CP EC NP
+   pat19 8 8 584 952 56 64 TGPF
+GR
+GS
+   GS
+      NP 611 984 19 24 TGEL
+      4 W
+      S
+   GR
+GR
+
+% OVAL
+0 SG
+GS
+   NP 676 984 19 24 TGEL
+   CP 1 SG F
+   0 SG
+   NP 676 984 19 24 TGEL
+   CP EC NP
+   pat19 8 8 648 952 56 64 TGPF
+GR
+GS
+   GS
+      NP 676 984 19 24 TGEL
+      4 W
+      S
+   GR
+GR
+
+% OVAL
+0 SG
+GS
+   NP 754 984 19 24 TGEL
+   CP 1 SG F
+   0 SG
+   NP 754 984 19 24 TGEL
+   CP EC NP
+   pat19 8 8 728 952 56 64 TGPF
+GR
+GS
+   GS
+      NP 754 984 19 24 TGEL
+      4 W
+      S
+   GR
+GR
+
+% OVAL
+0 SG
+GS
+   NP 832 984 19 24 TGEL
+   CP 1 SG F
+   0 SG
+   NP 832 984 19 24 TGEL
+   CP EC NP
+   pat19 8 8 808 952 48 64 TGPF
+GR
+GS
+   GS
+      NP 832 984 19 24 TGEL
+      4 W
+      S
+   GR
+GR
+
+% OVAL
+0 SG
+GS
+   NP 910 984 19 24 TGEL
+   CP 1 SG F
+   0 SG
+   NP 910 984 19 24 TGEL
+   CP EC NP
+   pat19 8 8 888 952 48 64 TGPF
+GR
+GS
+   GS
+      NP 910 984 19 24 TGEL
+      4 W
+      S
+   GR
+GR
+
+% RCBOX
+GS
+   416 320 TR
+   [0.982 0.188 -0.188 0.982 -133 4] CO
+   416 NE 320 NE TR
+0 SG
+GS
+   GS
+      NP
+         544 320 M
+         560 320 560 400 16 AR
+         560 384 L
+         560 400 416 400 16 AR
+         432 400 L
+         416 400 416 320 16 AR
+         416 336 L
+         416 320 560 320 16 AR
+      CP
+      TGSM
+      3 W
+      S
+   GR
+GR
+GR
+
+% TEXT
+NP
+0 SG
+GS
+   432 331 TR
+   [7.795 1.594 -0.608 3.405 -140 5] CO
+   432 NE 331 NE TR
+GR
+   GS
+      1 W
+      432 331 TR
+      [7.795 1.594 -0.608 3.405 -140 5] CO
+      0 14 M
+      GS
+            0 SG
+            /Times-Roman FF [14 0 0 -14 0 0] MS
+            (gif) SH
+      GR
+   GR
+
+% RCBOX
+GS
+   128 410 TR
+   [0.871 0.479 -0.277 0.662 -101 -149] CO
+   128 NE 410 NE TR
+0 SG
+GS
+   GS
+      NP
+         272 410 M
+         288 410 288 490 16 AR
+         288 474 L
+         288 490 128 490 16 AR
+         144 490 L
+         128 490 128 410 16 AR
+         128 426 L
+         128 410 288 410 16 AR
+      CP
+      TGSM
+      3 W
+      S
+   GR
+GR
+GR
+
+% TEXT
+NP
+0 SG
+GS
+   128 411 TR
+   [4.354 2.396 -1.384 3.310 -101 -150] CO
+   128 NE 411 NE TR
+GR
+   GS
+      1 W
+      128 411 TR
+      [4.354 2.396 -1.384 3.310 -101 -150] CO
+      0 14 M
+      GS
+            0 SG
+            /Times-Roman FF [14 0 0 -14 0 0] MS
+            (cmyk) SH
+      GR
+   GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   128 144 TR
+   [0.817 0.576 -0.576 0.817 110 -107] CO
+   128 NE 144 NE TR
+GS
+   NP
+      128 288 M
+      320.00 192.00 480.00 213.33
+      601 344 CT
+   TGSM
+   4 W
+   S
+   1 W
+GR
+GS
+   TGSM
+   NP
+      511 484 14.000 6.000 38 281 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      511 484 14.000 6.000 38 281 TGAT
+   CP F
+GR
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   368 192 TR
+   [0.817 0.576 -0.576 0.817 38 22] CO
+   368 NE 192 NE TR
+GS
+   NP
+      368 208 M
+      474.67 197.33 581.33 261.33
+      682 391 CT
+   TGSM
+   4 W
+   S
+   1 W
+GR
+GS
+   TGSM
+   NP
+      548 568 14.000 6.000 11 262 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      548 568 14.000 6.000 11 262 TGAT
+   CP F
+GR
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      618 736 M
+      0 299 atan DU cos 20.000 MU 917 exch SU
+      exch sin 20.000 MU 736 exch SU L
+   TGSM
+   6 W
+   S
+   1 W
+GR
+GS
+   TGSM
+   NP
+      917 736 20.000 8.000 299 0 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      917 736 20.000 8.000 299 0 TGAT
+   CP F
+GR
+
+% RCBOX
+GS
+   32 224 TR
+   [0.705 0.709 -0.709 0.705 56 -80] CO
+   32 NE 224 NE TR
+0 SG
+GS
+   GS
+      NP
+         208 224 M
+         224 224 224 304 16 AR
+         224 288 L
+         224 304 32 304 16 AR
+         48 304 L
+         32 304 32 224 16 AR
+         32 240 L
+         32 224 224 224 16 AR
+      CP
+      TGSM
+      3 W
+      S
+   GR
+GR
+GR
+
+% TEXT
+NP
+0 SG
+GS
+   48 226 TR
+   [5.718 5.753 -2.837 2.820 52 -71] CO
+   48 NE 226 NE TR
+GR
+   GS
+      1 W
+      48 226 TR
+      [5.718 5.753 -2.837 2.820 52 -71] CO
+      0 14 M
+      GS
+            0 SG
+            /Times-Roman FF [14 0 0 -14 0 0] MS
+            (pdf) SH
+      GR
+   GR
+
+% RCBOX
+0 SG
+GS
+   GS
+      NP
+         706 880 M
+         722 880 722 944 16 AR
+         722 928 L
+         722 944 592 944 16 AR
+         608 944 L
+         592 944 592 880 16 AR
+         592 896 L
+         592 880 722 880 16 AR
+      CP
+      3 W
+      S
+   GR
+GR
+
+% TEXT
+NP
+0 SG
+GS
+   608 882 TR
+   [4.062 0.000 0.000 3.000 -3 0] CO
+   608 NE 882 NE TR
+GR
+   GS
+      1 W
+      608 882 TR
+      [4.062 0.000 0.000 3.000 -3 0] CO
+      0 14 M
+      GS
+            0 SG
+            /Times-Roman FF [14 0 0 -14 0 0] MS
+            (jpeg) SH
+      GR
+   GR
+
+% RCBOX
+0 SG
+GS
+   GS
+      NP
+         849 880 M
+         865 880 865 944 16 AR
+         865 928 L
+         865 944 735 944 16 AR
+         751 944 L
+         735 944 735 880 16 AR
+         735 896 L
+         735 880 865 880 16 AR
+      CP
+      3 W
+      S
+   GR
+GR
+
+% TEXT
+NP
+0 SG
+GS
+   784 882 TR
+   [4.062 0.000 0.000 3.000 -36 0] CO
+   784 NE 882 NE TR
+GR
+   GS
+      1 W
+      784 882 TR
+      [4.062 0.000 0.000 3.000 -36 0] CO
+      0 14 M
+      GS
+            0 SG
+            /Times-Roman FF [14 0 0 -14 0 0] MS
+            (jpeg) SH
+      GR
+   GR
+
+% RCBOX
+0 SG
+GS
+   GS
+      NP
+         992 880 M
+         1008 880 1008 944 16 AR
+         1008 928 L
+         1008 944 878 944 16 AR
+         894 944 L
+         878 944 878 880 16 AR
+         878 896 L
+         878 880 1008 880 16 AR
+      CP
+      3 W
+      S
+   GR
+GR
+
+% TEXT
+NP
+0 SG
+GS
+   960 882 TR
+   [4.062 0.000 0.000 3.000 -69 0] CO
+   960 NE 882 NE TR
+GR
+   GS
+      1 W
+      960 882 TR
+      [4.062 0.000 0.000 3.000 -69 0] CO
+      0 14 M
+      GS
+            0 SG
+            /Times-Roman FF [14 0 0 -14 0 0] MS
+            (jpeg) SH
+      GR
+   GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      553 608 M
+      579 592 L
+      592 624 L
+      618 624 L
+      618 656 L
+   TGSM
+   5 W
+   S
+   1 W
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      566 576 M
+      592 576 L
+      605 608 L
+      631 608 L
+      631 640 L
+   TGSM
+   5 W
+   S
+   1 W
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      20 992 M
+      20 1024 L
+      46 1024 L
+      46 1056 L
+      72 1056 L
+   TGSM
+   5 W
+   S
+   1 W
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      7 1008 M
+      7 1040 L
+      33 1040 L
+      33 1072 L
+      59 1072 L
+   TGSM
+   5 W
+   S
+   1 W
+GR
+
+GR
+tgifsavedpage restore
+end
+
+%%Trailer
+%MatchingCreationDate: Tue Jun 27 01:21:53 2017
+%%DocumentFonts: Times-Roman
+%%EOF

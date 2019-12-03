@@ -1,0 +1,8 @@
+3)のやり方
+sqlite3 literacy2.db < users.dat
+4)のやり方
+sqlite> select * from users where 'bash' LIKE '%bash';
+5)のやり方
+select count(*) from users;
+6)のやり方
+select * from users where uname LIKE '%ko';

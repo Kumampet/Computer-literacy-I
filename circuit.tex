@@ -1,0 +1,34 @@
+% 12.3 宿題12 電気回路の微分方程式
+
+\documentclass[a4paper]{jarticle}
+\begin{document}
+\rm
+\section {電気回路の微分方程式}
+電気回路の基本法則は電荷の保存と、閉じた回路では電圧降下の総和が０となることに尽きます。電荷の保存は回路の各分岐点における電流の保存（キルヒホッフの定理）として表現されますが、ここでは分岐のない単純な閉じたループ状の回路を考えてみましょう。回路上にコンデンサ（C）、抵抗（R）、コイル（L）、起電力（E）があるとしましょう。
+\begin{equation}
+  E = V_C + V_R + V_L
+\end{equation}
+が基本的な方程式です。$V_C$,$V_R$,$V_L$は C,R,L それぞれにおける電圧降下です。それぞれにおける電圧降下は電荷、電流、電流の変化率で$V_C = \frac {Q}{C}$, $V_R = IR$, $V_L = \frac {dI}{dt}$ と表されます。また電荷の保存を考慮すれば$I = \frac {dQ}{dt}$ ですから、
+\begin{equation}
+  E = \frac{Q}{C} + R\frac{dQ}{dt} + L\frac{d^2Q}{dt^2} \label{denatsukouka}
+\end{equation}
+となり、Qについての線形微分方程式となります。これを $E = E_0e^i\omega t$ の強制振動として、$Q = Q_0e^{i\omega t}$とおいて定常解を求めると、
+\begin{displaymath}
+  Q_0 = \frac{E_o}{\frac{1}{C} - L\omega ^2 + iR\omega}
+\end{displaymath}
+という振幅が得られます。$Q = Q_0e^{i\omega t} + q$として、式(\ref{denatsukouka})に代入すると、過渡現象を記述する部分$q$に対する同次方程式、
+\begin{displaymath}
+  0 = \frac{q}{C} + R\frac{dq}{dt} + L\frac{d^2q}{dt^2}
+\end{displaymath}
+が得られます。$q = e^{-\lambda t}$として解を求めると、この方程式は$\lambda$についての２次方程式となるので、解
+\begin{displaymath}
+  \lambda_\pm = \frac{R \pm \sqrt{R^2 - \frac{4L}{C}}}{2L}
+\end{displaymath}
+が見つかります。そこで
+$$Q = Q_0e^{i\omega t} + C_+e^{-\lambda + t} + C_-e^{-\lambda_-t}$$
+と置き、初期条件$Q(t = 0) = 0$,$\frac{dQ}{dt}|_{t=0} = 0$の元で$C_+$,$C_-$を求めると、
+\begin{equation}
+  Q = Q_0 (e^{i\omega t} + \frac{i\omega + \lambda_-}{\lambda_+ - \lambda_-}e^{-\lambda_+ t} + \frac{i\omega + \lambda_+}{\lambda_- - \lambda_+}e^{-\lambda_-t})
+\end{equation}
+が条件を満たす解としてつかります。
+\end{document}

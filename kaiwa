@@ -1,0 +1,8 @@
+#!/usr/local/gnu/bin/bash
+echo "Are you fine today? (y/n)"
+read henji
+if [ "$henji" = "y" ]; then
+   echo "That's good!"
+elif [ "henji" = "n" ]; then
+     echo "that's bad..."
+fi

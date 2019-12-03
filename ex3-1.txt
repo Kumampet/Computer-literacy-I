@@ -1,0 +1,161 @@
+------------------------------------------------------------------------------------------------------------
+	   サイト名：ASUS/JAPAN
+
+traceroute to www.asus.com (23.207.99.92), 30 hops max, 40 byte packets
+ 1  core-rt-12.u-aizu.ac.jp (163.143.12.1)  0.239 ms  0.384 ms  0.377 ms
+ 2  gate-fw01.u-aizu.ac.jp (163.143.103.2)  0.819 ms  0.465 ms  0.759 ms
+ 3  sinet-gate.u-aizu.ac.jp (163.143.181.2)  0.894 ms  0.872 ms  0.873 ms
+ 4  fukushima-RM-XE-3-0-0-998.s5.sinet.ad.jp (150.99.188.45)  1.838 ms  1.766 ms  1.767 ms
+ 5  tokyo1-RM-ET-4-0-0-108.s5.sinet.ad.jp (150.99.68.29)  5.307 ms  5.279 ms  5.153 ms
+ 6  akamai.gw.sinet.ad.jp (150.99.186.226)  6.162 ms  6.185 ms  6.213 ms
+ 7  a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92)  5.660 ms  5.810 ms  5.658 ms
+
+PING www.asus.com: 56 data bytes
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=0. time=5.441 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=1. time=5.614 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=2. time=5.663 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=3. time=5.526 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=4. time=5.480 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=5. time=5.507 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=6. time=5.574 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=7. time=5.573 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=8. time=5.440 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=9. time=5.549 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=10. time=5.629 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=11. time=5.526 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=12. time=5.480 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=13. time=5.459 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=14. time=5.547 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=15. time=5.620 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=16. time=5.484 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=17. time=5.467 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=18. time=5.520 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=19. time=5.577 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=20. time=5.485 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=21. time=5.590 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=22. time=5.602 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=23. time=5.511 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=24. time=5.525 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=25. time=5.384 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=26. time=5.473 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=27. time=5.514 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=28. time=5.591 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=29. time=5.526 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=30. time=5.475 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=31. time=5.571 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=32. time=5.534 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=33. time=5.454 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=34. time=5.572 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=35. time=5.454 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=36. time=5.553 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=37. time=5.544 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=38. time=5.405 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=39. time=5.557 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=40. time=5.464 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=41. time=5.520 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=42. time=5.505 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=43. time=5.557 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=44. time=5.499 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=45. time=5.496 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=46. time=5.439 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=47. time=5.678 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=48. time=5.562 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=49. time=5.542 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=50. time=5.693 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=51. time=5.552 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=52. time=5.412 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=53. time=5.583 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=54. time=5.518 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=55. time=5.629 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=56. time=5.608 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=57. time=5.547 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=58. time=5.542 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=59. time=5.552 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=60. time=5.553 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=61. time=5.609 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=62. time=5.620 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=63. time=5.598 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=64. time=5.643 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=65. time=5.476 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=66. time=5.619 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=67. time=5.492 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=68. time=5.517 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=69. time=5.516 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=70. time=5.548 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=71. time=5.453 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=72. time=5.503 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=73. time=5.711 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=74. time=5.439 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=75. time=5.515 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=76. time=5.551 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=77. time=5.569 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=78. time=5.441 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=79. time=5.509 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=80. time=5.468 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=81. time=5.502 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=82. time=5.400 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=83. time=5.597 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=84. time=5.463 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=85. time=5.482 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=86. time=5.608 ms
+64 bytes from a23-207-99-92.deploy.static.akamaitechnologies.com (23.207.99.92): icmp_seq=87. time=5.567 ms
+^C
+----www.asus.com PING Statistics----
+88 packets transmitted, 88 packets received, 0% packet loss
+round-trip (ms)  min/avg/max/stddev = 5.384/5.533/5.711/0.068
+
+経路説明
+会津内では3箇所のネットワークを経由
+さらに福島県のネットワークを1箇所経由し、東京のネットワークへ接続
+そこから徐々に少規模ネットワークへ接続し、ASUS/JAPANのホームページへ接続した。
+
+接続速度は平均で、5.5msで比較的穏やかであった\\
+
+
+
+---------------------------------------------------------------------------
+	サイト名：ASRock.Japan
+
+traceroute www.asrock.com
+traceroute to www.asrock.com (66.226.78.22), 30 hops max, 40 byte packets
+ 1  core-rt-12.u-aizu.ac.jp (163.143.12.1)  37.314 ms  1.635 ms  2.127 ms
+ 2  gate-fw01.u-aizu.ac.jp (163.143.103.2)  0.796 ms  0.449 ms  0.756 ms
+ 3  sinet-gate.u-aizu.ac.jp (163.143.181.2)  0.837 ms  0.821 ms  0.907 ms
+ 4  fukushima-RM-XE-3-0-0-998.s5.sinet.ad.jp (150.99.188.45)  1.777 ms  2.520 ms  1.814 ms
+ 5  osaka-GM-ET-7-1-0-1108.s5.sinet.ad.jp (150.99.90.17)  12.492 ms  12.561 ms  12.406 ms
+ 6  ae-22.a01.osakjp02.jp.bb.gin.ntt.net (61.200.91.153)  13.566 ms  13.988 ms  33.709 ms
+ 7  ae-2.r01.osakjp02.jp.bb.gin.ntt.net (129.250.3.107)  115.189 ms ae-1.r00.osakjp02.jp.bb.gin.ntt.net (129.250.3.233)  114.171 ms  114.194 ms
+ 8  ae-5.r25.osakjp02.jp.bb.gin.ntt.net (129.250.5.46)  13.329 ms ae-6.r25.osakjp02.jp.bb.gin.ntt.net (129.250.5.48)  13.281 ms  12.813 ms
+ 9  ae-4.r22.lsanca07.us.bb.gin.ntt.net (129.250.2.176)  115.927 ms  115.937 ms  120.766 ms
+10  ae-1.r00.lsanca07.us.bb.gin.ntt.net (129.250.3.17)  114.997 ms ae-1.r01.lsanca07.us.bb.gin.ntt.net (129.250.3.123)  120.899 ms  115.235 ms
+11  ae-0.a00.lsanca07.us.bb.gin.ntt.net (129.250.2.104)  115.837 ms ae-1.a00.lsanca07.us.bb.gin.ntt.net (129.250.2.116)  123.191 ms  114.214 ms
+12  xe-0-0-17-3.a00.lsanca07.us.ce.gin.ntt.net (129.250.206.174)  123.607 ms  129.355 ms  124.365 ms
+13  core1-edge1-lag1.phx1.codero.com (216.55.160.4)  123.818 ms  129.483 ms  124.512 ms
+14  216-55-160-59.dedicated.codero.net (216.55.160.59)  130.329 ms  128.822 ms  123.654 ms
+15  66-226-78-22.dedicated.codero.net (66.226.78.22)  123.404 ms  128.297 ms  123.313 ms
+
+PING www.asrock.com: 56 data bytes
+64 bytes from 66-226-78-22.dedicated.codero.net (66.226.78.22): icmp_seq=0. time=128.086 ms
+64 bytes from 66-226-78-22.dedicated.codero.net (66.226.78.22): icmp_seq=1. time=128.088 ms
+64 bytes from 66-226-78-22.dedicated.codero.net (66.226.78.22): icmp_seq=2. time=128.133 ms
+64 bytes from 66-226-78-22.dedicated.codero.net (66.226.78.22): icmp_seq=3. time=128.067 ms
+64 bytes from 66-226-78-22.dedicated.codero.net (66.226.78.22): icmp_seq=4. time=128.054 ms
+64 bytes from 66-226-78-22.dedicated.codero.net (66.226.78.22): icmp_seq=5. time=128.046 ms
+64 bytes from 66-226-78-22.dedicated.codero.net (66.226.78.22): icmp_seq=6. time=128.032 ms
+64 bytes from 66-226-78-22.dedicated.codero.net (66.226.78.22): icmp_seq=7. time=128.074 ms
+64 bytes from 66-226-78-22.dedicated.codero.net (66.226.78.22): icmp_seq=8. time=128.106 ms
+64 bytes from 66-226-78-22.dedicated.codero.net (66.226.78.22): icmp_seq=9. time=128.037 ms
+64 bytes from 66-226-78-22.dedicated.codero.net (66.226.78.22): icmp_seq=10. time=127.963 ms
+64 bytes from 66-226-78-22.dedicated.codero.net (66.226.78.22): icmp_seq=11. time=128.034 ms
+64 bytes from 66-226-78-22.dedicated.codero.net (66.226.78.22): icmp_seq=12. time=128.019 ms
+64 bytes from 66-226-78-22.dedicated.codero.net (66.226.78.22): icmp_seq=13. time=128.131 ms
+64 bytes from 66-226-78-22.dedicated.codero.net (66.226.78.22): icmp_seq=14. time=128.088 ms
+64 bytes from 66-226-78-22.dedicated.codero.net (66.226.78.22): icmp_seq=15. time=128.074 ms
+64 bytes from 66-226-78-22.dedicated.codero.net (66.226.78.22): icmp_seq=16. time=128.076 ms
+^C
+----www.asrock.com PING Statistics----
+18 packets transmitted, 17 packets received, 5% packet loss
+round-trip (ms)  min/avg/max/stddev = 127.963/128.065/128.133/0.042
+
+経路
+会津=>会津=>会津=>福島県=>東京=>アメリカ

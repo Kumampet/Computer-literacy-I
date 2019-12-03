@@ -1,0 +1,47 @@
+\documentclass[a4paper]{jarticle}
+\usepackage{dvipdfmx}{graphicx}
+% 画像ファイル（eps,png,jpeg,pdf）　を取り込む場合には
+% graphicx の使用を宣言します。
+
+\title{A \LaTeX ~ sample [Post Script]}
+\author{s1250050@u-aizu.ac.jp}
+\date{\today}
+\begin{document}
+\maketitle
+\section{Postscript の取り込み}
+サンプル
+\begin{figure}[bth]
+	\begin{center}
+		includegraphics[scale=0.5]{%
+/home/course/lit1/pub/FIGURE/sylpheed-3.0.3.eps}
+	end{center}
+	\caption{sylpheed3 を開いたところ}
+\end{figure}
+
+figure と inculudegraphics のオプションの説明
+\begin{center}
+\begin{tabular}{c || l }
+scale & 縦横同倍のスケール \\
+hscale & 横方向のスケール \\
+vscale & 縦方向のスケール \\
+width=10zw & 横幅を全角 10 文字幅分にスケール\\
+hight=10cm & 高さを 10cm にスケール\\
+angle=90 & 90　度回転\\
+origin=c & センターを中心に回転\\
+h & その位置に表示\\
+t & ページ上端に表示\\
+b & ページ下端に表示\\
+p & 単独ページに表示\\
+\end{tabular}
+\end{center}
+
+あまり使わないけど、図だけでなく文字も回転できる。
+\par
+\rotaatebox{90}{\fbox{回転}}
+\rotaatebox{60}{\fbox{回転}}
+\rotaatebox{30}{\fbox{回転}}
+\rotaatebox{10}{\fbox{回転}}
+\rotaatebox{0}{\fbox{回転}}
+
+
+\end{document}

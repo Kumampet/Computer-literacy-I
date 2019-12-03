@@ -1,0 +1,5 @@
+sqlite> SELECT distinct Ename,MAX( Price ) 
+   ...> from Events,Goods where Events.Gid = Goods.Id group by Ename;
+Birthday|300
+Christmas|300
+Seijinsiki|100

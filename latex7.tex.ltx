@@ -1,0 +1,36 @@
+\documentclass[a4paper]{jarticle}
+\title{A \LaTeX\ sample [Mathematics]}
+\author{s1250050@u-aizu.ac.jp}
+\date{today}
+\begin{document}
+\maketitle
+\section{数学記号の表示}
+数学の式などの記号は equation　環境や eqnarray 環境を使用します。
+
+サンプル
+\begin{equation}
+\int_a^{\infty} f(x) dx
+\end{equation}
+\begin{equation} \label{number}
+y =\frac{a}{1+a} +
+\frac{b}{1+\frac{b}{1+\frac{b}{1+\cdots}}} + 
+\sqrt{\sqrt{1+x}}
+\end{equation}
+式\ref{number}は...の様に引用する.
+\begin{eqnarray*}
+y &=& 1+2+3 \\
+	&=& 1+5 \\
+	&=& 6 \\
+\end{eqnarray*}
+\begin{equation} \label{matrix}
+	y = \left(
+		\begin{array}{rrr}
+			1 & 2 & 3 \\
+			4 & 5 & 6 \\
+			7 & 8 & 9 \\
+		\end{array}
+		\right)
+\end{equation}
+文章中に使用したいときにはドルマーク\$ ではさむと良いでしょう.
+この様な　$\sum_1^n n^2$ 使い方です.
+\end{document}

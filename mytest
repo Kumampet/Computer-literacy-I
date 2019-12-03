@@ -1,0 +1,4 @@
+#! /usr/local/gnu/bin/bash
+# comment is possible after '#'.
+echo "This is a beginner course of shell programming."
+echo "Please enjoy yourself with programming."

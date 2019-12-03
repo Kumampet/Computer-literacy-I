@@ -1,0 +1,13 @@
+Difference of HTML.
+
+-index.html-
+2f6278bfa23dab20e2a00044eac0ae48  /home/student/s1250050/literacy2/HTML/index.html
+
+-index2.html-
+173cadfd73a32904f2826df16f7aaf52  /home/student/s1250050/literacy2/HTML/index2.html
+
+-diff-
+22c22
+<       <li>一言：ばなな</li>
+---
+>       <li>一言：ばかな</li>

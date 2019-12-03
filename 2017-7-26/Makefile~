@@ -1,0 +1,28 @@
+LATEX = platex
+DVIPS = dvips
+PS2PDF = ps2dvi
+BIBTEX = pbibtex
+
+FILE = test
+
+all:
+
+bib: $(FILE).tex
+	$(LATEX) $(FILE).tex
+	$(BIBTEX) $(FILE)
+	$(LATEX) $(FILE).tex
+	$(LATEX) $(FILE).tex
+
+tex: $(FILE).tex
+	$(LATEX) $(FILE).tex
+	$(LATEX) $(LATEX).tex
+
+dvips: $(FILE).dvi
+	$(DVIPS) $(FILE).dvi -o $(FILE).ps
+
+ps2dvi: $(FILE).ps
+	$(PS2PDF) $(FILE).ps $(FILE).pdf
+	rm $(FILE).ps
+
+clean:
+	rm $(FILE).dvi $(FILE).aux $(FILE).log

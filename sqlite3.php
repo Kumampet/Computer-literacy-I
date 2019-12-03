@@ -1,0 +1,2 @@
+<html>
+<p><table border=1 width=80%><tr><td>2</td><td>A.Fujitu</td><td>Keizan</td><td></td><td>a-fujitu</td></tr><tr><td>3</td><td>T.Huang</td><td>Matsunaga</td><td></td><td>t-huang</td></tr><tr><td>1</td><td>Aizu Taro</td><td>The Univ. of Aizu</td><td></td><td></td></tr><tr><td>4</td><td>T.Hayashi</td><td>The Univ. of Aizu</td><td></td><td>takafumi</td></tr><tr><td>5</td><td>abc</td><td>abc</td><td>abc</td><td>xyz</td></tr><tr><td>6</td><td>A.Fujitu</td><td>Keizan</td><td></td><td>7777</td></tr></table></p></html>

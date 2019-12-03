@@ -1,0 +1,32 @@
+gpg2 --verify tar-1.14.tar.gz.sig tar-1.14.tar.gz
+Warning: using insecure memory!
+gpg: Signature made May 11, 2004 05:51:32 PM JST using DSA key ID 55D0C732
+gpg: Can't check signature: No public key
+
+gpg2 --keyserver pgpkeys.mit.edu --recv-key 55D0C732
+Warning: using insecure memory!
+gpg: requesting key 55D0C732 from hkp server pgpkeys.mit.edu
+gpg: /home/student/s1250050/.gnupg/trustdb.gpg: trustdb created
+gpg: key 55D0C732: public key "Sergey Poznyakoff <gray@gnu.org>" imported
+gpg: no ultimately trusted keys found
+gpg: Total number processed: 1
+gpg:               imported: 1
+
+gpg2 --verify tar-1.14.tar.gz.sig tar-1.14.tar.gz
+Warning: using insecure memory!
+gpg: Signature made May 11, 2004 05:51:32 PM JST using DSA key ID 55D0C732
+gpg: Good signature from "Sergey Poznyakoff <gray@gnu.org>" [unknown]
+gpg:                 aka "Sergey Poznyakoff <gray@gnu.org.ua>" [unknown]
+gpg:                 aka "Sergey Poznyakoff (Gray) <gray@mirddin.farlep.net>" [unknown]
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 325F 650C 4C2B 6AD5 8807  327A 3602 B07F 55D0 C732
+
+gpg2 --fingerprint 55D0C732
+Warning: using insecure memory!
+pub   1024D/55D0C732 2002-02-06
+      Key fingerprint = 325F 650C 4C2B 6AD5 8807  327A 3602 B07F 55D0 C732
+uid       [ unknown] Sergey Poznyakoff <gray@gnu.org>
+uid       [ unknown] Sergey Poznyakoff <gray@gnu.org.ua>
+uid       [ unknown] Sergey Poznyakoff (Gray) <gray@mirddin.farlep.net>
+sub   1024g/56DFFBBA 2002-02-06

@@ -1,0 +1,10 @@
+# 元のファイル 圧縮コマンド 結果ファイル 圧縮比
+  beamer_compress.ps compress beamer_compress.ps.Z 111445/186319 (59.8%)
+  beamer_compress.ps gzip beamer_compress.ps.gz 83100/186319 (44.6%)
+
+  ConstitutionOfAizu_compress.txt gzip ConstitutionOfAizu_compress.txt.gz 9595/31120 (30.8%)
+  ConstitutionOfAizu_compress.txt xz ConstitutionOfAizu_compress.txt.xz 8972/31120 (28.8%)
+
+  furiko_comp.dvi compress furiko_comp.dvi.Z 21461/98636 (21.7%)
+  furiko_comp.dvi bzip2 furiko_comp.dvi.bz2 4927/98636 (4.99%)
+

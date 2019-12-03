@@ -1,0 +1,47 @@
+\documentclass[a4paper]{jarticle}
+\usepackage{tabularx}
+\title{A \LaTeX ~sample [Tabular]}
+\author{s1250050@u-aizu.ac.jp}
+\date{\today}
+\begin{document}
+\maketitle
+\section{Tabular}
+\subsection{Tabular1}
+この様に項目を表示できます。 \\
+\begin{center}
+\begin{tabular}{c c c || c}
+りんご & みかん & ばなな & 果物 \\
+じゃがいも & 大根 & レタス & 野菜 \\
+豚 & 牛 & 鶏 & 肉 \\
+\end{tabular}
+\end{center}
+
+\subsection{Tabular2}
+表組に線を引くことができます。
+\begin{tabular}{| l | r |  c | c |}
+\hline
+番号 & 名前 & 出身地 & 好物 \\
+\hline
+\hline
+1 & 太郎 & アフリカ & リンゴ \\
+\hline
+2 & 花子 & 印度 & じゃがいも \\
+\hline
+\end{tabular}
+
+\section{Tabularx}
+Tabularx は横幅を均等割りできます。 \\
+\begin{tabularx}{45zw}{| c || X |  X | X |}
+\hline
+番号 & 料理 & 材料(4皿分) & 一皿当りのカロリー（Kcal）\\
+\hline
+\hline
+1 & カレー & 肉 200g、　玉ねぎ２、　人参２、　じゃがいも２、　市販のルーなど & 900 \\
+\hline
+2 & シチュー& 肉 200g、　玉ねぎ２、　人参２、　じゃがいも２、　市販のルーなど & 900 \\
+\hline
+3 & 肉じゃが & 肉　200g、　玉ねぎ２、　人参２、　じゃがいも２、　糸こんにゃく 200g、　醤油、　砂糖 & 900 \\
+\hline
+\end{tabularx}
+
+\end{document}

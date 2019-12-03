@@ -1,0 +1,19 @@
+\documentclass[]{beamer}
+\usetheme{default}
+\usepackage{pstricks}
+\newcommand{\maru}[1]{%
+  \pscircle[linecolor=blue,linewidth=3pt,linestyle=dashed](0,0){#1}}
+
+
+\begin{document}
+
+\begin{frame}{}
+  \begin{pspicture}(-5,0)(5,5)
+    \only<1>{\maru{-5}{2}}
+    \only<2>{\maru{-4}{1.8}}
+    \only<3>{\maru{3}}
+    \only<4>{\maru{4}}
+  \end{pspicture}
+\end{frame}
+
+\end{document}

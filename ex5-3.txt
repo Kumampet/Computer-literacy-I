@@ -1,0 +1,65 @@
+openssl x509 -text -noout -in '*googlecom.crt' 
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 7139864023289537929 (0x6315e48024c3a589)
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=US, O=Google Inc, CN=Google Internet Authority G2
+        Validity
+            Not Before: Oct 24 09:07:17 2017 GMT
+            Not After : Dec 29 00:00:00 2017 GMT
+        Subject: C=US, ST=California, L=Mountain View, O=Google Inc, CN=*.google.com
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub: 
+                    04:b5:1f:47:4d:3d:32:da:83:7b:ee:19:ac:9f:38:
+                    4c:cf:b7:c5:17:93:cf:de:fc:0e:b7:9b:fd:8b:d0:
+                    b0:23:d9:cf:f6:42:63:9b:40:de:de:e2:e6:4a:b5:
+                    32:30:6c:09:a2:62:88:5c:08:eb:e7:cc:dc:4d:da:
+                    6f:28:55:58:7b
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Key Usage: 
+                Digital Signature
+            X509v3 Subject Alternative Name: 
+                DNS:*.google.com, DNS:*.android.com, DNS:*.appengine.google.com, DNS:*.cloud.google.com, DNS:*.db833953.google.cn, DNS:*.g.co, DNS:*.gcp.gvt2.com, DNS:*.google-analytics.com, DNS:*.google.ca, DNS:*.google.cl, DNS:*.google.co.in, DNS:*.google.co.jp, DNS:*.google.co.uk, DNS:*.google.com.ar, DNS:*.google.com.au, DNS:*.google.com.br, DNS:*.google.com.co, DNS:*.google.com.mx, DNS:*.google.com.tr, DNS:*.google.com.vn, DNS:*.google.de, DNS:*.google.es, DNS:*.google.fr, DNS:*.google.hu, DNS:*.google.it, DNS:*.google.nl, DNS:*.google.pl, DNS:*.google.pt, DNS:*.googleadapis.com, DNS:*.googleapis.cn, DNS:*.googlecommerce.com, DNS:*.googlevideo.com, DNS:*.gstatic.cn, DNS:*.gstatic.com, DNS:*.gvt1.com, DNS:*.gvt2.com, DNS:*.metric.gstatic.com, DNS:*.urchin.com, DNS:*.url.google.com, DNS:*.youtube-nocookie.com, DNS:*.youtube.com, DNS:*.youtubeeducation.com, DNS:*.yt.be, DNS:*.ytimg.com, DNS:android.clients.google.com, DNS:android.com, DNS:developer.android.google.cn, DNS:developers.android.google.cn, DNS:g.co, DNS:goo.gl, DNS:google-analytics.com, DNS:google.com, DNS:googlecommerce.com, DNS:source.android.google.cn, DNS:urchin.com, DNS:www.goo.gl, DNS:youtu.be, DNS:youtube.com, DNS:youtubeeducation.com, DNS:yt.be
+            Authority Information Access: 
+                CA Issuers - URI:http://pki.google.com/GIAG2.crt
+                OCSP - URI:http://clients1.google.com/ocsp
+
+            X509v3 Subject Key Identifier: 
+                FF:1E:AC:84:3D:FC:26:8A:5D:42:AE:31:6F:7C:60:FC:47:7F:F6:8C
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Authority Key Identifier: 
+                keyid:4A:DD:06:16:1B:BC:F6:68:B5:76:F5:81:B6:BB:62:1A:BA:5A:81:2F
+
+            X509v3 Certificate Policies: 
+                Policy: 1.3.6.1.4.1.11129.2.5.1
+                Policy: 2.23.140.1.2.2
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://pki.google.com/GIAG2.crl
+
+    Signature Algorithm: sha256WithRSAEncryption
+         41:be:24:93:ce:0d:e9:ab:88:8f:ee:64:5d:f8:43:c8:6b:ed:
+         f0:11:aa:86:81:99:65:9b:34:7f:3e:8f:f0:48:0d:ed:a3:a0:
+         eb:2d:5e:45:c8:06:73:4d:96:d6:cf:e5:0e:3a:1a:b9:ae:60:
+         e0:56:a4:ee:d0:33:cd:40:0d:13:f9:8d:75:5f:c9:46:7b:ff:
+         4c:06:00:9a:2a:73:26:8e:44:ce:d4:33:c6:d1:72:5f:66:4d:
+         92:94:31:d9:e7:16:71:68:21:4c:0b:81:79:4e:f3:d4:b9:b8:
+         fa:c1:83:25:e3:96:47:c5:a5:35:6c:fc:f8:52:b7:96:f1:f6:
+         ef:2f:cb:a8:13:58:81:d0:06:2c:3e:cd:1a:36:cc:20:48:38:
+         a4:53:34:50:ee:e6:7c:54:96:6d:8e:6d:53:b6:1c:4b:48:f6:
+         1f:0e:14:dc:94:aa:23:a4:5a:4d:51:b8:31:e3:98:ec:6e:e1:
+         5d:11:ac:b2:15:58:e5:2e:ed:2c:c1:62:67:e6:e0:df:b5:a0:
+         fd:c5:64:85:d7:f4:f5:80:bd:20:65:5b:b2:c5:a2:06:dd:8f:
+         1f:5e:ad:82:ce:10:07:b7:8c:96:25:b5:2e:a1:c6:e7:ee:fb:
+         5e:b6:c8:b4:47:77:5f:6b:88:e4:61:00:a4:84:50:a9:22:5b:
+         f7:3a:fd:c4

@@ -1,0 +1,16 @@
+インストールディレクトリ
+MySQL:/usr/local/mysql/
+PostgreSQL:/usr/local/pgsql/
+
+データベースサーバーの起動方法
+MySQL:/usr/local/mysql/bin/mysqld_safe --basedir=/usr/local/mysql \
+ --datadir=$HOME/mysql/data \
+ --skip-grant-tables --general_log \
+ --socket=$HOME/mysql/mysql.sock &
+ を入力しサーバーを起動
+PostgreSQL:PostgreSQLのサーバを動作させる指定されたホストにリモートログインする。:rlogin [hostname]
+PostgreSQL のサーバを指定されたポート番号で動作させる。:[ex] pg_ctl -D $HOME/pgsql/data -l $HOME/pgsql/logfile  -o "-i -p port_number" start
+
+どちらのサーバーも最後は自分の手で終了させる。
+MySQL:MySQL のサーバは mysqladmin コマンドを利用して自分の手で終了させる。/usr/local/mysql/bin/mysqladmin shutdown --socket=$HOME/mysql/mysql.sock
+PostgreSQL:pg_ctl -D $HOME/pgsql/data stop

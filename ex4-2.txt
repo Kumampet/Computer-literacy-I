@@ -1,0 +1,16 @@
+> GET /~s1250050/index.html HTTP/1.1 ←HTTP/1.1に指定したアドレスのページを要求している
+> Host: web-int ←ホスト名
+> User-Agent: curl/7.50.3
+> Accept: */*
+> 
+< HTTP/1.1 200 OK サーバーが要求に受け答えた返答。要求処理を正常に終了した報告。
+< Date: Mon, 30 Oct 2017 04:42:03 GMT
+< Server: Apache
+< X-Frame-Options: SAMEORIGIN
+< X-XSS-Protection: 1; mode=block
+< Last-Modified: Mon, 23 Oct 2017 03:13:02 GMT
+< ETag: "7d4-55c2e334d2a99"
+< Accept-Ranges: bytes
+< Content-Length: 2004
+< X-Content-Type-Options: nosniff
+< Content-Type: text/html リソースのメディアタイプ
